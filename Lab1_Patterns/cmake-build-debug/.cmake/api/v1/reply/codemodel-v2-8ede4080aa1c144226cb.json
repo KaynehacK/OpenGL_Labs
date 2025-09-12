@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.30"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Test",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Test-Debug-b2e7c10494318f154cf1.json",
+					"name" : "Test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Documents/\u0420\u0430\u0431\u043e\u0442\u044b/\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442/\u041a\u043e\u043c\u043f\u044c\u044e\u0440\u0435\u0442\u043d\u0430\u044f \u0433\u0440\u0430\u0444\u0438\u043a\u0430/OpenGL_Labs/Lab1_Patterns/cmake-build-debug",
+		"source" : "C:/Documents/\u0420\u0430\u0431\u043e\u0442\u044b/\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442/\u041a\u043e\u043c\u043f\u044c\u044e\u0440\u0435\u0442\u043d\u0430\u044f \u0433\u0440\u0430\u0444\u0438\u043a\u0430/OpenGL_Labs/Lab1_Patterns"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

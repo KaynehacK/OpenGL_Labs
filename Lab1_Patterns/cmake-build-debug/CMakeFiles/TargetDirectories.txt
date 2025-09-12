@@ -1,0 +1,3 @@
+C:/Documents/Работы/Университет/Компьюретная графика/OpenGL_Labs/Lab1_Patterns/cmake-build-debug/CMakeFiles/Test.dir
+C:/Documents/Работы/Университет/Компьюретная графика/OpenGL_Labs/Lab1_Patterns/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Documents/Работы/Университет/Компьюретная графика/OpenGL_Labs/Lab1_Patterns/cmake-build-debug/CMakeFiles/rebuild_cache.dir
