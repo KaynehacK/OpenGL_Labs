@@ -1,0 +1,3 @@
+C:/Documents/Работы/Университет/Компьюретная графика/OpenGL_Labs/Lab2_Surface_with_lighting/cmake-build-debug/CMakeFiles/Lab2_Surface_with_lighting.dir
+C:/Documents/Работы/Университет/Компьюретная графика/OpenGL_Labs/Lab2_Surface_with_lighting/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Documents/Работы/Университет/Компьюретная графика/OpenGL_Labs/Lab2_Surface_with_lighting/cmake-build-debug/CMakeFiles/rebuild_cache.dir
