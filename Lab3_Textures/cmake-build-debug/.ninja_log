@@ -1,0 +1,20 @@
+# ninja log v6
+15	1263	7798969313430961	CMakeFiles/Lab3_Textures.dir/Solutions/LoadShader.cpp.obj	41df7395f7b9b5c2
+5	416	7798905838436722	build.ninja	1559b88ef7819718
+19	2517	7798996238853974	CMakeFiles/Lab3_Textures.dir/main.cpp.obj	b1a5eddcc4b73ece
+2518	2790	7798996263846016	Lab3_Textures.exe	becb5e4730da9125
+39	1239	7798871869187487	CMakeFiles/Lab3_Textures.dir/Solutions/stb_image.cpp.obj	b00d688d241ed825
+13	2136	7798996750896393	CMakeFiles/Lab3_Textures.dir/main.cpp.obj	b1a5eddcc4b73ece
+2137	2404	7798996772141340	Lab3_Textures.exe	becb5e4730da9125
+12	1106	7799007082712930	CMakeFiles/Lab3_Textures.dir/Solutions/LoadShader.cpp.obj	41df7395f7b9b5c2
+1107	1431	7799007093653823	Lab3_Textures.exe	becb5e4730da9125
+11	1012	7799007506635434	CMakeFiles/Lab3_Textures.dir/Solutions/LoadShader.cpp.obj	41df7395f7b9b5c2
+1013	1287	7799007516648797	Lab3_Textures.exe	becb5e4730da9125
+16	1315	7799007913319396	CMakeFiles/Lab3_Textures.dir/Solutions/LoadShader.cpp.obj	41df7395f7b9b5c2
+1316	1632	7799007926322118	Lab3_Textures.exe	becb5e4730da9125
+15	1136	7799008497366436	CMakeFiles/Lab3_Textures.dir/Solutions/LoadShader.cpp.obj	41df7395f7b9b5c2
+1137	1407	7799008508581512	Lab3_Textures.exe	becb5e4730da9125
+13	1239	7799008635803862	CMakeFiles/Lab3_Textures.dir/Solutions/LoadShader.cpp.obj	41df7395f7b9b5c2
+1240	1517	7799008648074866	Lab3_Textures.exe	becb5e4730da9125
+17	1155	7799008943926100	CMakeFiles/Lab3_Textures.dir/Solutions/LoadShader.cpp.obj	41df7395f7b9b5c2
+1156	1450	7799008955317027	Lab3_Textures.exe	becb5e4730da9125
