@@ -28,6 +28,7 @@ bool mouseRotationEngaged = false;
 bool mouseRotationStarted = true;
 float startCursorPosX = 0.0f;
 float startCursorPosY = 0.0f;
+const float arrowsRotationSpeed = 0.03f;
 
 // ---------------- ВВОД С КЛАВИАТУРЫ -----------------
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
@@ -97,6 +98,39 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
 
         startCursorPosX = xpos;
         startCursorPosY = ypos;
+    }
+}
+
+void ArrowsInput(int inputDirection, float &rotationAngleX, float &rotationAngleY) {
+    switch (inputDirection) {
+        case 1: rotationAngleX -= arrowsRotationSpeed;
+            break;
+        case 2: rotationAngleX += arrowsRotationSpeed;
+            break;
+        case 4: rotationAngleY -= arrowsRotationSpeed;
+            break;
+        case 5: rotationAngleX -= arrowsRotationSpeed;
+            rotationAngleY -= arrowsRotationSpeed;
+            break;
+        case 6: rotationAngleX += arrowsRotationSpeed;
+            rotationAngleY -= arrowsRotationSpeed;
+            break;
+        case 7: rotationAngleY -= arrowsRotationSpeed;
+            break;
+        case 8: rotationAngleY += arrowsRotationSpeed;
+            break;
+        case 9: rotationAngleX -= arrowsRotationSpeed;
+            rotationAngleY += arrowsRotationSpeed;
+            break;
+        case 10: rotationAngleX += arrowsRotationSpeed;
+            rotationAngleY += arrowsRotationSpeed;
+            break;
+        case 11: rotationAngleY += arrowsRotationSpeed;
+            break;
+        case 13: rotationAngleX -= arrowsRotationSpeed;
+            break;
+        case 14: rotationAngleX += arrowsRotationSpeed;
+            break;
     }
 }
 
@@ -174,6 +208,7 @@ int main() {
         return -1;
     }
     glfwMakeContextCurrent(window);
+    glfwSwapInterval(1);
     glfwSetKeyCallback(window, key_callback);
     glfwSetMouseButtonCallback(window, mouse_button_callback);
     glfwSetCursorPosCallback(window, mouse_callback);
@@ -219,43 +254,12 @@ int main() {
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
 
-        // Для примера: вращаем поверхность
-        switch (inputDirection) {
-            case 1: rotationAngleX -= 0.001f;
-                break;
-            case 2: rotationAngleX += 0.001f;
-                break;
-            case 4: rotationAngleY -= 0.001f;
-                break;
-            case 5: rotationAngleX -= 0.001f;
-                rotationAngleY -= 0.001f;
-                break;
-            case 6: rotationAngleX += 0.001f;
-                rotationAngleY += 0.001f;
-                break;
-            case 7: rotationAngleY -= 0.001f;
-                break;
-            case 8: rotationAngleY += 0.001f;
-                break;
-            case 9: rotationAngleX -= 0.001f;
-                rotationAngleY -= 0.001f;
-                break;
-            case 10: rotationAngleX += 0.001f;
-                rotationAngleY -= 0.001f;
-                break;
-            case 11: rotationAngleY -= 0.001f;
-                break;
-            case 13: rotationAngleX -= 0.001f;
-                break;
-            case 14: rotationAngleX += 0.001f;
-                break;
-        }
-
         glClearColor(0.1f, 0.1f, 0.2f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         glUseProgram(shaderProgram);
 
+        ArrowsInput(inputDirection, rotationAngleX, rotationAngleY);
         // Матрицы
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::translate(model, translation);

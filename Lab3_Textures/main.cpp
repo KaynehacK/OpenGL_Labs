@@ -109,6 +109,39 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
     }
 }
 
+void ArrowsInput(int inputDirection, float &rotationAngleX, float &rotationAngleY) {
+    switch (inputDirection) {
+        case 1: rotationAngleX -= arrowsRotationSpeed;
+            break;
+        case 2: rotationAngleX += arrowsRotationSpeed;
+            break;
+        case 4: rotationAngleY -= arrowsRotationSpeed;
+            break;
+        case 5: rotationAngleX -= arrowsRotationSpeed;
+            rotationAngleY -= arrowsRotationSpeed;
+            break;
+        case 6: rotationAngleX += arrowsRotationSpeed;
+            rotationAngleY -= arrowsRotationSpeed;
+            break;
+        case 7: rotationAngleY -= arrowsRotationSpeed;
+            break;
+        case 8: rotationAngleY += arrowsRotationSpeed;
+            break;
+        case 9: rotationAngleX -= arrowsRotationSpeed;
+            rotationAngleY += arrowsRotationSpeed;
+            break;
+        case 10: rotationAngleX += arrowsRotationSpeed;
+            rotationAngleY += arrowsRotationSpeed;
+            break;
+        case 11: rotationAngleY += arrowsRotationSpeed;
+            break;
+        case 13: rotationAngleX -= arrowsRotationSpeed;
+            break;
+        case 14: rotationAngleX += arrowsRotationSpeed;
+            break;
+    }
+}
+
 // ---------------- АНАЛИТИЧЕСКАЯ ФУНКЦИЯ ----------------
 float surfaceFunc(float x, float y) {
     return 0.6f * sin(y * 2 + sin(x * 2) * 3); // Функция 0
@@ -252,43 +285,12 @@ int main() {
         glfwPollEvents();
         processInput(window);
 
-        // Для примера: вращаем поверхность
-        switch (inputDirection) {
-            case 1: rotationAngleX -= arrowsRotationSpeed;
-                break;
-            case 2: rotationAngleX += arrowsRotationSpeed;
-                break;
-            case 4: rotationAngleY -= arrowsRotationSpeed;
-                break;
-            case 5: rotationAngleX -= arrowsRotationSpeed;
-                rotationAngleY -= arrowsRotationSpeed;
-                break;
-            case 6: rotationAngleX += arrowsRotationSpeed;
-                rotationAngleY -= arrowsRotationSpeed;
-                break;
-            case 7: rotationAngleY -= arrowsRotationSpeed;
-                break;
-            case 8: rotationAngleY += arrowsRotationSpeed;
-                break;
-            case 9: rotationAngleX -= arrowsRotationSpeed;
-                rotationAngleY += arrowsRotationSpeed;
-                break;
-            case 10: rotationAngleX += arrowsRotationSpeed;
-                rotationAngleY += arrowsRotationSpeed;
-                break;
-            case 11: rotationAngleY -= arrowsRotationSpeed;
-                break;
-            case 13: rotationAngleX -= arrowsRotationSpeed;
-                break;
-            case 14: rotationAngleX += arrowsRotationSpeed;
-                break;
-        }
-
         glClearColor(0.1f, 0.1f, 0.2f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         glUseProgram(shaderProgram);
 
+        ArrowsInput(inputDirection, rotationAngleX, rotationAngleY);
         // Матрицы
         glm::mat4 model = glm::mat4(1.0f);
         model = glm::translate(model, translation);

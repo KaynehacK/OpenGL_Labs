@@ -1,0 +1,3 @@
+C:/Documents/Работы/Университет/Компьюретная графика/OpenGL_Labs/Lab4_Body_of_revolution/cmake-build-debug/CMakeFiles/Lab4_Body_of_revolution.dir
+C:/Documents/Работы/Университет/Компьюретная графика/OpenGL_Labs/Lab4_Body_of_revolution/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Documents/Работы/Университет/Компьюретная графика/OpenGL_Labs/Lab4_Body_of_revolution/cmake-build-debug/CMakeFiles/rebuild_cache.dir
