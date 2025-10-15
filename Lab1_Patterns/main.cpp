@@ -32,6 +32,7 @@ int main() {
         return -1;
     }
     glfwMakeContextCurrent(window);
+    glfwSwapInterval(1);
     glfwSetKeyCallback(window, key_callback);
 
     //Инициация GLEW
